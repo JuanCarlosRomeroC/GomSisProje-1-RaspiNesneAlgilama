@@ -8,13 +8,20 @@ Bölüm 1 - Raspberry Pi'de TensorFlow Lite Nesne Algılama Modellerinin Ayarlan
 Raspberry Pi'de TensorFlow Lite kurmak normal TensorFlow'dan çok daha kolay! TensorFlow Lite'ı kurmak için gereken adımlar şunlardır:
 
 1  Raspberry Pi'yi güncelleyin
+
 2  Bu veri havuzunu indirin ve sanal ortam yaratın
+
 3  TensorFlow ve OpenCV'yi yükleyin
+
 4  TensorFlow Lite algılama modelini ayarlama
+
 5  TensorFlow Lite modelini çalıştırın!
+
 Ayrıca bu kılavuzda  bir YouTube videosu hazırladım: https://www.youtube.com/watch?v=H3EL1m2sW1Q
-Adım-2  Raspberry Pi'yi güncelleyin;
+Adım-1  Raspberry Pi'yi güncelleyin;
+
 İlk olarak Raspide bir terminal açıp aşağıdaki kodları yapıştıralım.
+
 sudo apt-get update
 sudo apt-get dist-upgrade
 
@@ -22,21 +29,13 @@ Pi'nizi güncellediğinizden bu yana geçen süreye bağlı olarak, güncelleme 
 
 Güncelleme yapılırken bizde Raspberry konfigürasyon ayarlarından Kamerayı Enable edelim.
 
-
-
-
-
-
-
-
-
-
 Adım 2 Bu veri havuzunu indirin ve sanal ortam yaratın
 Ardından, aşağıdaki komutu vererek bu GitHub havuzunu kopyalayın. Depo, TensorFlow Lite'ı çalıştırmak için kullanacağımız komut dosyalarının yanı sıra her şeyi yüklemeyi kolaylaştıracak bir kabuk komut dosyası içerir. 
 
 git clone https://github.com/engbkr/Raspberry-Pi-ile-Nesne-Tanima.git 
 
 Bu, her şeyi Android ve Ahududu Pi'de TensorFlow-Lite-Nesne-Algılama adlı bir klasöre indirir. Çalışması biraz uzun, bu nedenle klasörü "tflite1" olarak yeniden adlandırın ve içine cd yazın:
+
 mv TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi tflite1
 cd tflite1
 
