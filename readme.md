@@ -23,6 +23,7 @@ Adım-1  Raspberry Pi'yi güncelleyin;
 İlk olarak Raspide bir terminal açıp aşağıdaki kodları yapıştıralım.
 
 sudo apt-get update
+
 sudo apt-get dist-upgrade
 
 Pi'nizi güncellediğinizden bu yana geçen süreye bağlı olarak, güncelleme bir dakika ile bir saat arasında sürebilir.
@@ -37,6 +38,7 @@ git clone https://github.com/engbkr/Raspberry-Pi-ile-Nesne-Tanima.git
 Bu, her şeyi Android ve Ahududu Pi'de TensorFlow-Lite-Nesne-Algılama adlı bir klasöre indirir. Çalışması biraz uzun, bu nedenle klasörü "tflite1" olarak yeniden adlandırın ve içine cd yazın:
 
 mv TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi tflite1
+
 cd tflite1
 
 Rehberin geri kalanı için bu / home / pi / tflite1 dizininde çalışacağız. Sıradaki "tflite1-env" adında bir sanal ortam oluşturmaktır.
@@ -45,9 +47,11 @@ Bu kılavuz için sanal bir ortam kullanıyorum, çünkü Pi'nize önceden yükl
 Virtualenv'i şu şekilde yükleyin:
 
 sudo pip3 install virtualenv
+
 Ardından, aşağıdakileri düzenleyerek "tflite1-env" sanal ortamını oluşturun:
 
 python3 -m venv tflite1-env
+
 Bu, tflite1 dizininin içinde tflite1-env adlı bir klasör oluşturur. Tflite1-env klasörü, bu ortam için tüm paket kitaplıklarını tutacaktır. Ardından, aşağıdakileri yaparak çevreyi etkinleştirin:
 
 source tflite1-env/bin/activate
@@ -59,7 +63,9 @@ Adım 3 TensorFlow Lite bağımlılıklarını ve OpenCV'yi yükleme
 Ardından, TensorFlow, OpenCV ve her iki paket için gereken tüm bağımlılıkları yükleyeceğiz. TensorFlow Lite'ı çalıştırmak için OpenCV'ye gerek yoktur, ancak bu depodaki nesne algılama komut dosyaları, görüntüleri yakalamak ve üzerlerine algılama sonuçları çizmek için kullanılır.
 
 İşleri kolaylaştırmak için, tüm paketleri ve bağımlılıkları otomatik olarak indirip yükleyecek bir kabuk komut dosyası Edje Electronics tarafından yazılmıştır. Düzenleyerek çalıştırın.
+
 bash get_pi_requirements.sh
+
 NOT: Kabuk betiği, TensorFlow'un en son sürümünü otomatik olarak yükler. Belirli bir sürümü pip3 install tensorflow==X.XX yüklemek istiyorsanız, komut dosyasını çalıştırdıktan sonra sorun (X.XX yerine yüklemek istediğiniz sürümle değiştirilir). Bu, mevcut yüklemeyi belirtilen sürümle geçersiz kılar
 Adım 4 TensorFlow Lite algılama modelini ayarlama
 Bir algılama modelinin 2 genel dosyası vardır.İlki dedect.tflite ve ikincisi labelmap.txt dosyasıdır.İstersek kendi modelimizi oluşturabilir yada Google’n hazır olarak sunduğu tflite modeli ile çalışabiliriz.
@@ -67,9 +73,11 @@ Google’n örnek TFlite modelini kullanma
 Google, MSCOCO veri kümesinden eğitilen ve TensorFlow Lite üzerinde çalışmaya dönüştürülen örnek bir nicelleştirilmiş SSDLite-MobileNet-v2 nesne algılama modeli sağlar. İnsanlar, arabalar, bardaklar vb.Gibi 80 farklı ortak nesneyi tespit edebilir ve tanımlayabilir.
 
 Modeli aşağıdaki kodu girerek indirelim.
+
 wget https://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip
 
 Dosyayı arşivden çıkartacak kodu girelim.
+
 unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model
 
 Adım 5 TensorFlow Lite modelini çalıştırın!
