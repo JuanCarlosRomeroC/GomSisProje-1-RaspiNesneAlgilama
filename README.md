@@ -14,12 +14,18 @@ TensorFlow Lite (TFLite) modelleri, Raspberry Pi'deki normal TensorFlow modeller
 Raspberry Pi'de TensorFlow Lite kurmak normal TensorFlow'dan çok daha kolay! TensorFlow Lite'ı kurmak için gereken adımlar 
 
 **1**  Raspberry Pi'yi güncelleyin
+
 **2**  Bu veri havuzunu indirin ve sanal ortam yaratın
+
 **3**  TensorFlow ve OpenCV'yi yükleyin
+
 **4**  TensorFlow Lite algılama modelini ayarlama
+
 **5**  TensorFlow Lite modelini çalıştırın!
 
+
 Ayrıca bu kılavuzda  bir YouTube videosu hazırladım: https://www.youtube.com/watch?v=H3EL1m2sW1Q
+
 **Adım-1** Raspberry Pi'yi güncelleyin;
 
 İlk olarak Raspide bir terminal açıp aşağıdaki kodları yapıştıralım.
