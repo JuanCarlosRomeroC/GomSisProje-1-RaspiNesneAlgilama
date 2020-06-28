@@ -106,4 +106,7 @@ Modeli çalıştırmadan önce raspi üzerinde açık tüm uygulamaları kapatar
 
 `python3 TFLite_detection_webcam.py --modeldir=Sample_TFLite_model`
 
+<p align="center">
+  <img src="resimler/rasbi.PNG">
+</p>
 Model klasörünüzün "Sample_TFLite_model" adından farklı bir adı varsa, bunun yerine bu adı kullanın. Örneğin, --modeldir=Kendi_Modelim_TFLite_model
