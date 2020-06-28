@@ -9,6 +9,13 @@ Bu kılavuz, Raspberry Pi'de TensorFlow Lite'ın nasıl kurulacağı ve nesne al
 
 Eğer Windows üzerinde kendi eğitim setimizi oluşturmak istiyorsak [ Windows 10'da TensorFlow (GPU) Kullanarak Birden Çok Nesne İçin Nesne Algılama Sınıflandırıcısını Eğitme](https://github.com/engbkr/GomSisProje-2-Kendi_Egitim_Setini_Olustur) projesine gözatabilirsiniz.
 
+Kullanılan Donanımlar:
+Raspberi PI 3B Plus, Raspberry Pi Kamera Modülü v2 8 megapiksel 720p @60
+Kullanılan OS:
+Raspbian 
+
+Uygulama Raspbery Pi'nin 2-3 ve 4. nesil modellerinde ve Linux tabanlı OS'lerde de kullanılabilir.
+
 TensorFlow Lite (TFLite) modelleri, Raspberry Pi'deki normal TensorFlow modellerinden çok daha hızlı çalışır.
 
 
