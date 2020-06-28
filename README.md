@@ -7,6 +7,8 @@ Marmara Üniversitesi Gömülü Sistemler İle Mobil Uygulama Dersi Projesi Hakk
 
 Bu kılavuz, Raspberry Pi'de TensorFlow Lite'ın nasıl kurulacağı ve nesne algılama modellerini çalıştırmak için nasıl kullanılacağı hakkında adım adım talimatlar sağlar.Bu kaynak da aynı isimli EdjeElectronicsin projesinden yararlanılmıştır.
 
+Eğer Windows üzerinde kendi eğitim setimizi oluşturmak istiyorsak [ Windows 10'da TensorFlow (GPU) Kullanarak Birden Çok Nesne İçin Nesne Algılama Sınıflandırıcısını Eğitme](https://github.com/engbkr/GomSisProje-2-Kendi_Egitim_Setini_Olustur) projesine gözatabilirsiniz.
+
 TensorFlow Lite (TFLite) modelleri, Raspberry Pi'deki normal TensorFlow modellerinden çok daha hızlı çalışır.
 
 
