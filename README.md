@@ -86,7 +86,9 @@ Ardından, TensorFlow, OpenCV ve her iki paket için gereken tüm bağımlılık
 `bash get_pi_requirements.sh`
 
 **NOT:** Kabuk betiği, TensorFlow'un en son sürümünü otomatik olarak yükler. Belirli bir sürümü pip3 install tensorflow==X.XX yüklemek istiyorsanız, komut dosyasını çalıştırdıktan sonra sorun (X.XX yerine yüklemek istediğiniz sürümle değiştirilir). Bu, mevcut yüklemeyi belirtilen sürümle geçersiz kılar
+
 **Adım 4** TensorFlow Lite algılama modelini ayarlama
+
 Bir algılama modelinin 2 genel dosyası vardır.İlki dedect.tflite ve ikincisi labelmap.txt dosyasıdır.İstersek kendi modelimizi oluşturabilir yada Google’n hazır olarak sunduğu tflite modeli ile çalışabiliriz.
 Google’n örnek TFlite modelini kullanma
 Google, MSCOCO veri kümesinden eğitilen ve TensorFlow Lite üzerinde çalışmaya dönüştürülen örnek bir nicelleştirilmiş SSDLite-MobileNet-v2 nesne algılama modeli sağlar. İnsanlar, arabalar, bardaklar vb.Gibi 80 farklı ortak nesneyi tespit edebilir ve tanımlayabilir.
