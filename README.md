@@ -16,7 +16,7 @@ Raspbian
 
 **Not:**Uygulama Raspbery Pi'nin 2-3 ve 4. nesil modellerinde ve Linux tabanlı OS'lerde de kullanılabilir.
 
-***Giriş***
+****Giriş****
 
 TensorFlow Lite (TFLite) modelleri, Raspberry Pi'deki normal TensorFlow modellerinden çok daha hızlı çalışır.
 
